@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angyalszárny virágbolt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="scrollToTop.css">
+  <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Parisienne&display=swap" rel="stylesheet">
+  <script src="lightbox-plus-jquery.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <script src="scrollToTop.js" defer></script>
+  <script src="https://kit.fontawesome.com/3d47a07c59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Angyalszárny Virágbolt</h1>
+        <span>- Veszprém -</span>
+        <img class="divider" src="assets/divider-white.png" alt="divider-white">
+        <div class="buttons">
+          <a href="#gallery">Galéria</a>
+          <a href="#contact">Kapcsolat</a>
+        </div>
+    </header>
+    <main>
+      <div class="intro">
+        <div class="left">
+          <img class="white" src="assets/white-bouqet.png" alt="white-bouquet">
+        </div>
+        <div class="right">
+          <div class="quote">
+            <p>"Ha valaki szeret egy virágot, amely csak egyetlen példányban létezik a csillagmilliókon: ez épp elég neki, hogy boldog legyen, ha a csillagokra pillant."</p>
+            <p class="author">(Antoine de Saint-Exupéry)</p>
+          </div>
+        </div>
+      </div>
+      <img class="divider green" src="assets/divider-color.png" alt="divider">
+      <div class="products">
+        <h2>Szolgáltatás</h2>
+        <ul>
+          <li><i class="fas fa-leaf"></i>Csokrok</li>
+          <li><i class="fas fa-leaf"></i>Koszorúk</li>
+          <li><i class="fas fa-leaf"></i>Asztaldíszek</li>
+          <li><i class="fas fa-leaf"></i>Sírcsokrok</li>
+          <li><i class="fas fa-leaf"></i>Vágott virág</li>
+          <li><i class="fas fa-leaf"></i>Cserepes</li>
+          <li><i class="fas fa-leaf"></i>Kiszállítás</li>
+        </ul>
+      </div>
+      <img class="divider green" src="assets/divider-color.png" alt="divider">
+      <div class="gallery" id="gallery">
+        <h2>Galéria</h2>
+        <div class="row">
+          <a href="assets/images/colorful-flowers.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/colorful-flower-small.jpg">
+          </a>
+          <a href="assets/images/maroon-iris.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/maroon-iris-small.jpg">
+          </a>
+          <a href="assets/images/peach-flower.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/peach-flower-small.jpg">
+          </a>
+          <a href="assets/images/pink-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/pink-bouquet-small.jpg">
+          </a>      
+        </div>
+        <div class="row">
+          <a href="assets/images/pink-daisy.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/pink-daisy-small.jpg">
+          </a>
+          <a href="assets/images/purple-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/purple-bouquet-small.jpg">
+          </a>
+          <a href="assets/images/rainbow-roses.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/rainbow-roses-small.jpg">
+          </a>
+          <a href="assets/images/rainbow-tulip.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/rainbow-tulip-small.jpg">
+          </a>      
+        </div>
+        <a class="more" href="#hide">További képek</a>
+        <div class="row hide" id="hide">
+          <a href="assets/images/red-rose-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/red-rose-bouquet-small.jpg">
+          </a>
+          <a href="assets/images/tulips.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/tulips-small.jpg">
+          </a>
+          <a href="assets/images/vintage-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/vintage-bouquet-small.jpg">
+          </a>
+          <a href="assets/images/wedding-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/wedding-bouquet-small.jpg">
+          </a>      
+        </div>
+        <div class="row hide">
+          <a href="assets/images/white-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/white-bouquet-small.jpg">
+          </a>
+          <a href="assets/images/yellow-bouquet.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/yellow-bouquet-small.jpg">
+          </a>
+          <a href="assets/images/white-flower.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/white-flower-small.jpg">
+          </a>
+          <a href="assets/images/white-rose.jpg" data-lightbox="mygallery" data-title="Lorem ipsum">
+            <img class="gallery-img" src="assets/images/small/white-rose-small.jpg">
+          </a>      
+        </div>  
+      </div>
+      <img class="divider green" src="assets/divider-color.png" alt="divider">
+      <div class="contact" id="contact">
+        <h2>Kapcsolat</h2>
+        <div class="contact-section">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.222436611501!2d17.911098715489285!3d47.09470987915406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47699bb67974cc3d%3A0x5acd3dd5a496802f!2zVsOhc8OhcmNzYXJub2s!5e0!3m2!1shu!2shu!4v1627655360893!5m2!1shu!2shu" width="340" height="470" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contact-info">
+            <div class="category">
+              <section class="address">
+                <i class="fas fa-home"></i>
+                <h3>Cím</h3>
+              </section>
+              <section class="email">
+                <i class="fas fa-envelope"></i>
+                <h3>Elérhetőség</h3>
+              </section>
+              <section class="open-hours">
+                <i class="fas fa-clock"></i>
+                <h3>Nyitvatartás</h3>
+              </section>
+            </div>
+            <div class="info">
+              <div class="card card1">
+                <p>8200 Veszprém<br>Jutasi út 2.<br><span class="highlight">Vásárcsarnok</span></p>
+                <p>8200 Veszprém<br>József A. u. 6143.<br><span class="highlight">Vámosi úti temető - Ravatalozó</span></p>
+              </div>
+              <div class="card card2" >
+                <p><span class="highlight">Szabó Csilla, virágkötő</span><br>csillavir@gmail.com<br>0670 123 4567</p>
+              </div>
+              <div class="card card3">
+                <h4>Vásárcsarnok</h4>
+                <p>Hétfő - péntek: 6 -18 óra<br>Szombat: 6-13 óra<br>Vasárnap: Zárva</p>
+                <h4>Temető</h4>
+                <p>Hétfő - péntek: 7 - 18 óra<br>Szombat - vasárnap: 9 - 14 óra</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="top-link" id="js-top" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </main>
+    <footer>
+      <p><small>2021 Angyalszárny Virágbolt © Minden jog fenntartva | <a href="imp.html">Impresszum </a> | <a href="privacy-policy.html">Adatkezelési tájékoztató </a> | <a href="cookies.html">Cookie-szabályzat</a></small></p>
+    </footer>
+</body>
+</html>

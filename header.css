@@ -1,0 +1,170 @@
+/* ==== 1. HEADER ==== */
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ADC7BD;
+}
+
+
+
+
+
+/*-------------*\
+*
+*   TYPOGRAPHY
+*
+\*-------------*/
+
+/* Headlines */
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 10vh;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 8vh;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 7vh;
+        text-align: center;
+    }
+}
+
+
+
+
+span {
+    font-size: 4vh;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+
+@media (max-width: 767px) {
+    span {
+        font-size: 4vh;
+    }
+}
+
+
+
+
+
+/*------------*\
+*
+*    IMAGES
+*
+\*------------*/
+
+.divider {
+    width: 25%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+@media (max-width: 767px) {
+    .divider {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .divider {
+        width: 40%;
+    }
+
+    .green {
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .divider {
+        width: 25%;
+    }
+
+    .green {
+        width: 30%;
+    }
+}
+
+
+
+
+
+/*------------*\
+*
+*  COMPONENTS
+*
+\*------------*/
+
+.buttons a {
+    display: inline-block;
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+    background-color: rgba(255,255,255,.4);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: .125rem;
+    border-radius: 2rem;
+}
+
+
+.buttons a:hover {
+    background-color: #ffffff;
+    color: #ADC7BD;
+    transition: .3s ease-in;
+}
+
+
+
+@media (max-width: 767px) {
+    .buttons a {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .buttons a {
+        width: auto;
+        padding: 1.5rem;
+        border-radius: 3rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .buttons a {
+        width: auto;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+}

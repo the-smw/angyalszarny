@@ -1,0 +1,773 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #8F8685;
+}
+
+
+
+@media (max-width: 767px) {
+    body {
+        font-size: 3vh;
+    }
+}
+
+
+
+
+
+/*------------*\
+*
+*    LAYOUT
+*
+\*------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* ==== 1. HEADER ==== */
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ADC7BD;
+}
+
+
+
+
+
+/* ==== 2. QUOTE ==== */
+
+.intro {
+    width: 65%;
+    height: auto;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media (max-width: 767px) {
+    .intro {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5vh;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .intro {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+
+.left, .right {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 767px) {
+    .left, .right {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* ==== 3. PRODUCTS ==== */
+
+.products {
+    background: url('assets/back-watercolor.jpg') no-repeat top right;
+    background-size: cover;
+    width: 65%;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+@media (max-width: 1024px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        background-position-x: 60%;
+        padding: 1rem;
+    }
+}
+
+
+ul {
+    padding-left: 3rem;
+}
+
+
+li {
+    padding: 1rem;
+}
+
+
+@media (max-width: 767px) {
+    ul {
+        padding: 0;
+        align-self: start;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    ul {
+        padding: 1.5rem;
+        align-self: start;
+    }
+}
+
+
+
+
+
+/* ==== 4. GALLERY ==== */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+@media (max-width: 1024px) {
+    .gallery {
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+.row {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .row {
+        width: 95%;
+        height: 20vh;
+    }
+
+    .hide {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .row {
+        width: 100%;
+        height: 25vh;
+    }
+}
+
+
+
+
+
+/* ==== 5. CONTACT ==== */
+
+.contact {
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+    .contact {
+        width: 95%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
+
+.contact-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 1024px) {
+    .contact-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.map {
+    width: 35%;
+    height: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .map {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.contact-info {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 1024px) {
+    .contact-info {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+.category {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.address, .email, .open-hours {
+    cursor: pointer;
+}
+
+
+section {
+    width: 33%;
+    height: auto;
+    text-align: center;
+    padding: .5rem;
+    border: 2px solid #ADC7BD;
+    border-bottom: none;
+    border-left: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.card {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 5rem;
+}
+
+
+@media (max-width: 1024px) {
+    .card {
+        padding: 2rem;
+    }
+}
+
+
+
+.card2, .card3 {
+    display: none;
+}
+
+
+.card1, .address {
+    background-color: #ADC7BD;
+}
+
+
+
+
+
+/* ==== 6. FOOTER ==== */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c8072;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/*-------------*\
+*
+*   TYPOGRAPHY
+*
+\*-------------*/
+
+/* Headlines */
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 10vh;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 8vh;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 7vh;
+        text-align: center;
+    }
+}
+
+
+
+
+h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 8vh;
+    line-height: 1.5;
+    margin-bottom: 4vh;
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2vh;
+    letter-spacing: .105rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+@media (max-width: 767px) {
+    h3 {
+        font-size: 1.5vh;
+    }
+}
+
+
+span {
+    font-size: 4vh;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+
+@media (max-width: 767px) {
+    span {
+        font-size: 4vh;
+    }
+}
+
+
+
+/* Quote section texts */
+
+p {
+    padding: 3rem;
+    padding-bottom: 0;
+    line-height: 2;
+}
+
+
+.author {
+    font-size: 2vh;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+@media (max-width: 1024px) {
+    p {
+        padding: 1.5rem;
+    }
+
+    .author {
+        line-height: 1;
+        padding-top: .5rem;
+    }
+}
+
+
+
+
+/* Products section texts */
+
+li i {
+    color: #ADC7BD;
+    font-size: 3vh;
+    padding-right: 2rem;
+}
+
+
+
+
+
+/* Contact section texts */
+
+section i {
+    font-size: 5vh;
+    color: #ADC7BD;
+    margin-bottom: .5rem;
+}
+
+
+.card p {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+
+.highlight, h4 {
+    color: #8F8685;
+    font-size: 2.2vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .105rem;
+}
+
+
+.card1, .address, .address i, .card1 .highlight {
+    color: #ffffff;
+}
+
+
+
+
+
+/* Footer texts */
+
+footer p {
+    font-size: 2vh;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+footer a:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*------------*\
+*
+*    IMAGES
+*
+\*------------*/
+
+.divider {
+    width: 25%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+@media (max-width: 767px) {
+    .divider {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .divider {
+        width: 40%;
+    }
+
+    .green {
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .divider {
+        width: 25%;
+    }
+
+    .green {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+.white {
+    width: 80%;
+    height: auto;
+}
+
+
+
+/* Gallery styles */
+
+.row a {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    margin: .5rem;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(20%)
+}
+
+
+.gallery-img:hover {
+    filter: saturate(100%);
+    transform: scale(1.05);
+    transition: .7s ease;
+}
+
+
+
+@media (max-width: 767px) {
+    .row a {
+        width: 90%;
+        height: 25vh;
+    }
+
+    .gallery-img {
+        filter: saturate(50%);
+    }
+
+    .gallery-img:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .gallery-img {
+        filter: saturate(50%);
+    }
+
+    .gallery-img:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+
+
+
+
+
+/*------------*\
+*
+*  COMPONENTS
+*
+\*------------*/
+
+.buttons a {
+    display: inline-block;
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+    background-color: rgba(255,255,255,.4);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: .125rem;
+    border-radius: 2rem;
+}
+
+
+.buttons a:hover {
+    background-color: #ffffff;
+    color: #ADC7BD;
+    transition: .3s ease-in;
+}
+
+
+
+.more {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .buttons a {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .more {
+    display: inline-block;
+    align-self: flex-end;
+    width: 13rem;
+    height: auto;
+    padding: 1rem;
+    background-color: #ADC7BD;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: .125rem;
+    line-height: 1.2;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .buttons a {
+        width: auto;
+        padding: 1.5rem;
+        border-radius: 3rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .buttons a {
+        width: auto;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+}
