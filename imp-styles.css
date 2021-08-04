@@ -47,6 +47,33 @@ main {
 
 
 
+@media (min-width: 1200px) {
+    main {
+        flex-direction: row;
+    }
+
+    .impressum {
+        width: 50%;
+    }
+
+    .picture {
+        width: 50%;
+    }
+
+    .right-img {
+        width: 100%;
+    }
+}
+
+
+.impressum {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+
 /* ==== 1. FOOTER ==== */
 
 footer {
@@ -75,7 +102,7 @@ h2 {
     font-size: 8vh;
     line-height: 1.5;
     margin-bottom: 4vh;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -117,4 +144,26 @@ footer a {
 footer a:hover {
     color: #ffffff;
     font-weight: 600;
+}
+
+
+
+
+
+/*-----------*\
+*
+*    IMAGES
+*
+\*-----------*/
+
+.picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.right-img {
+    width: 100%;
+    height: auto;
 }

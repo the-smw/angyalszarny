@@ -73,6 +73,32 @@ span {
 *
 \*------------*/
 
+.logo {
+    width: 5rem;
+    height: auto;
+    margin: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+    .logo {
+        position: unset;
+        margin: 0;
+        width: 3rem;
+    }
+
+    .home {
+        align-self: flex-start;
+    }
+}
+
+
+
+
 .divider {
     width: 25%;
     height: auto;
